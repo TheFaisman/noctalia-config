@@ -11,8 +11,8 @@ card_borders          = false            # draw outlines around section cards in
 popup_shadows         = true            # draw drop shadows behind popups and dropdowns
 font_family           = "UbuntuNerdFont"    # Pango family string; Fontconfig handles fallback
 lang                  = ""              # empty = auto-detect; otherwise BCP-47 or POSIX locale
-time_format           = "{:%H:%M}"      # default time format for shell UI without its own setting
-date_format           = "%A\n%B%e, %Y"        # default date format for shell UI without its own setting
+time_format           = "{:%-I:%M %p}"      # default time format for shell UI without its own setting
+date_format           = "%A\n%B %e, %Y"        # default date format for shell UI without its own setting
 offline_mode          = false           # block all outgoing HTTP requests
 # panel_anchor_bar   = "main"           # bar panels attach to without a source bar; omit = first enabled bar
 external_ip_enabled   = false           # resolve the WAN IP for the Control Center network tab and network widget tooltip
