@@ -10,6 +10,7 @@ capsule_fill = "surface"
 [widget.clock]
 format = "{:%A %-I:%M %p}"
 capsule_fill = "surface"
+anchor = true
 
 [widget.session]
 color = "error"
@@ -38,3 +39,13 @@ drawer = true
 
 [widget.bluetooth]
 show_label = true
+
+[widget.privacy]
+hide_inactive = true
+
+[widget.nightlight]
+capsule_fill = "surface"
+
+[widget.mini-spacer]
+type = "spacer"
+length = 12

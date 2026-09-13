@@ -44,8 +44,8 @@ capsule_opacity    = 1.0
 # capsule_border   = "outline"   # omit this key for no border by default
 
 start  = ["control-center", "launcher", "spacer", "workspaces", "active_window"]
-center = ["clock"]
-end    = ["group:notif_tray", "clipboard", "group:connect", "group:audio", "group:power", "session"]
+center = ["nightlight", "clock"]
+end    = ["privacy", "group:notif_tray", "clipboard", "group:connect", "group:audio", "group:power", "session"]
 
 [[bar.default.capsule_group]]
 members = ["bluetooth", "network"]
@@ -60,5 +60,5 @@ members = ["volume", "input-volume"]
 id = "audio"
 
 [[bar.default.capsule_group]]
-members = ["tray", "spacer", "notifications"]
+members = ["tray", "mini-spacer", "notifications"]
 id = "notif_tray"
