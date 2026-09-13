@@ -1,0 +1,5 @@
+[control_center]
+sidebar = "compact"
+
+[weather]
+enabled = true
