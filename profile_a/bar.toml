@@ -45,7 +45,7 @@ capsule_opacity    = 1.0
 
 start  = ["control-center", "launcher", "spacer", "workspaces", "active_window"]
 center = ["nightlight", "clock"]
-end    = ["privacy", "group:notif_tray", "clipboard", "group:connect", "group:audio", "group:power", "session"]
+end    = ["group:notif_tray", "clipboard", "group:connect", "group:audio", "group:power", "session"]
 
 [[bar.default.capsule_group]]
 members = ["bluetooth", "network"]
