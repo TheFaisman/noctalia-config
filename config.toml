@@ -5,28 +5,6 @@ files = ["profile_a/"]
 [accessibility]
 ui_scale = 1.0
 
-[bar.default]
-center = [ "workspaces", "spacer_1", "active_window" ]
-concave_edge_corners = true
-end = [ "media", "spacer_1", "tray", "notifications", "network", "volume", "session" ]
-margin_edge = 0
-margin_ends = 0
-radius_bottom_left = 12
-radius_bottom_right = 12
-radius_top_left = 0
-radius_top_right = 0
-scale = 0.90
-start = [ "launcher", "clock", "spacer_1", "group:g1" ]
-thickness = 35
-
-    [[bar.default.capsule_group]]
-    border = ""
-    fill = "on_secondary"
-    id = "g1"
-    members = [ "temp", "sysmon_2", "sysmon_3" ]
-    opacity = 1.0
-    padding = 6.0
-
 [system.monitor]
 gpu_poll_seconds = 2
 
@@ -35,57 +13,5 @@ mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
-    [theme.templates]
-    builtin_ids = [ "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt", "alacritty" ]
-
-[widget.clock]
-color = "secondary"
-format = "{:%H:%M %A %m/%d/%y}"
-
-[widget.launcher]
-color = "secondary"
-
-[widget.media]
-hide_when_no_media = true
-title_scroll = "on_hover"
-
-[widget.network]
-color = "secondary"
-
-[widget.notifications]
-color = "secondary"
-
-[widget.session]
-color = "error"
-
-[widget.spacer_1]
-type = "spacer"
-
-[widget.temp]
-show_value = false
-
-[widget.sysmon_2]
-glyph = "gpu-usage"
-show_value = false
-stat = "gpu_temp"
-type = "sysmon"
-
-[widget.sysmon_3]
-glyph = "cpu-2"
-stat = "ram_used"
-type = "sysmon"
-
-[widget.tray]
-capsule = true
-capsule_fill = "on_secondary"
-
-[widget.volume]
-color = "secondary"
-
-[widget.workspaces]
-active_pill_size = 2.5
-capsule = true
-capsule_fill = "on_primary"
-inactive_pill_size = 1.0
-pill_scale = 0.80
-show_labels = false
+[theme.templates]
+builtin_ids = [ "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt", "alacritty" ]

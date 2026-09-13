@@ -1,0 +1,40 @@
+[widget.active_window]
+min_length = 0
+max_length = 200 
+icon_size = 18 
+title_scroll = "on_hover"
+display = "icon_only"
+show_empty_label = true
+capsule_fill = "surface"
+
+[widget.clock]
+format = "{:%A %-I:%M %p}"
+capsule_fill = "surface"
+
+[widget.session]
+color = "error"
+
+[widget.workspaces]
+active_pill_size = 2.5
+inactive_pill_size = 1.0
+capsule = false
+capsule_radius = 6
+focused_color = "secondary"
+pill_scale = 0.9
+show_labels = true
+
+[widget.network]
+show_label = false
+
+[widget.input-volume]
+type = "volume"
+device = "input"
+hide_when_inactive = false
+show_label = false
+
+[widget.tray]
+capsule_fill = "surface"
+drawer = true
+
+[widget.bluetooth]
+show_label = true

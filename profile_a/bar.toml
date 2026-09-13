@@ -33,6 +33,7 @@ scale              = 1.0         # content scale multiplier for icons, spacing, 
 font_scale         = 1.0         # additional text-only scale multiplier
 font_weight        = 500         # CSS weight 100–1000 (e.g. 400 regular, 700 bold); primary label weight for bar widgets
 font_family        = ""          # typeface for this bar's widgets; empty inherits the global font
+color = "secondary"
 
 # Default capsule style for all widgets on this bar (see Widget Capsule section)
 capsule            = true 
@@ -42,9 +43,9 @@ capsule_radius     = 8.0            # omit for automatic pill radius
 capsule_opacity    = 1.0
 # capsule_border   = "outline"   # omit this key for no border by default
 
-start  = ["launcher", "wallpaper", "workspaces", "active_window"]
+start  = ["control-center", "launcher", "spacer", "workspaces", "active_window"]
 center = ["clock"]
-end    = ["tray", "notifications", "clipboard", "group:connect", "volume", "group:power", "control-center", "session"]
+end    = ["group:notif_tray", "clipboard", "group:connect", "group:audio", "group:power", "session"]
 
 [[bar.default.capsule_group]]
 members = ["bluetooth", "network"]
@@ -54,25 +55,10 @@ id = "connect"
 members = ["brightness", "battery"]
 id = "power" 
 
+[[bar.default.capsule_group]]
+members = ["volume", "input-volume"]
+id = "audio"
 
-# [bar.default]
-# center = [ "workspaces", "spacer_1", "active_window" ]
-# concave_edge_corners = true
-# end = [ "media", "spacer_1", "tray", "notifications", "network", "volume", "session" ]
-# margin_edge = 0
-# margin_ends = 0
-# radius_bottom_left = 12
-# radius_bottom_right = 12
-# radius_top_left = 0
-# radius_top_right = 0
-# scale = 0.90
-# start = [ "launcher", "clock", "spacer_1", "group:g1" ]
-# thickness = 35
-
-#    [[bar.default.capsule_group]]
-#    border = ""
-#    fill = "on_secondary"
-#    id = "g1"
-#    members = [ "temp", "sysmon_2", "sysmon_3" ]
-#    opacity = 1.0
-#    padding = 6.0
+[[bar.default.capsule_group]]
+members = ["tray", "spacer", "notifications"]
+id = "notif_tray"
